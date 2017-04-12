@@ -1,3 +1,8 @@
+# Important
+The following fork was created to be able to fix: https://github.com/royriojas/esformatter-jsx/issues/105
+it adds the option `voidElements: []`, that can be used to specify which elements should be considered void
+elements as explained here: http://w3c.github.io/html/syntax.html#void-elements
+
 # JS Beautifier
 [![Build Status](https://img.shields.io/travis/beautify-web/js-beautify/master.svg)](http://travis-ci.org/beautify-web/js-beautify)
 [![Build status](https://ci.appveyor.com/api/projects/status/5bxmpvew5n3e58te/branch/master?svg=true)](https://ci.appveyor.com/project/beautify-web/js-beautify/branch/master)
@@ -189,7 +194,7 @@ Configuration sources provided earlier in this stack will override later ones.
 The settings are a shallow tree whose values are inherited for all languages, but
 can be overridden.  This works for settings passed directly to the API in either implementation.
 In the Javascript implementation, settings loaded from a config file, such as .jsbeautifyrc,
-can also use inheritance/overriding.  
+can also use inheritance/overriding.
 
 Below is an example configuration tree showing all the supported locations
 for language override nodes.  We'll use `indent_size` to discuss how this configuration
@@ -219,7 +224,7 @@ would behave, but any number of settings can be inherited or overridden:
 Using the above example would have the following result:
 
 * HTML files
-  * Inherit `indent_size` of 4 spaces from the top-level setting.  
+  * Inherit `indent_size` of 4 spaces from the top-level setting.
   * The files would also end with a newline.
   * JavaScript and CSS inside HTML
     * Inherit the HTML `end_with_newline` setting
